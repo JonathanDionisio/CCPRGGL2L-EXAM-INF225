@@ -154,7 +154,7 @@ public class Regex {
 
         // Provide regex pattern
         pattern = Pattern
-                .compile("");
+                .compile("\\w+(\\.py|\\.java|\\.cpp)");
         match = pattern.matcher(myfiles);
 
         boolean found = false;
@@ -177,7 +177,7 @@ public class Regex {
         // 1. Remove the hashtag in the tweet
 
         // Provide the regex pattern
-        tweet = tweet.replaceAll("", "");
+        tweet = tweet.replaceAll("#", "");
 
         System.out.println(tweet);
 
@@ -191,7 +191,7 @@ public class Regex {
         // 1. Remove the URL in the tweet
 
         // Provide the regex pattern
-        tweet = tweet.replaceAll("", "");
+        tweet = tweet.replaceAll("http://apne.ws/AayqsiC", "");
 
         System.out.println(tweet);
 
@@ -205,7 +205,7 @@ public class Regex {
         // 1. Remove all special characters in the tweet.
 
         // Provide the regex pattern
-        tweet = tweet.replaceAll("", "");
+        tweet = tweet.replaceAll("[,|;|?]", "");
 
         System.out.println(tweet);
 
